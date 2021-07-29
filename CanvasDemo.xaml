@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPFDemoThing.CanvasDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemoThing"
+        mc:Ignorable="d"
+        Title="CanvasDemo" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="643" Margin="62,38,0,0">
+            <Image Height="100" Width="100"/>
+            <RadioButton Content="RadioButton" Canvas.Left="57" Canvas.Top="105"/>
+            <RadioButton Content="RadioButton"/>
+            <Label Content="Label" Canvas.Left="46" Canvas.Top="74"/>
+        </Canvas>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPFDemoThing.DockPanelDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDemoThing"
+        mc:Ignorable="d"
+        Title="DockPanelDemo" Height="248.91" Width="339.911">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DockPanel HorizontalAlignment="Left" Height="160" LastChildFill="False" VerticalAlignment="Top" Width="244" Margin="33,21,0,0">
+            <Border BorderBrush="Black" BorderThickness="1" Height="160" VerticalAlignment="Top" Width="100">
+                <Ellipse Fill="#FFF4F4F5" Stroke="Black"/>
+            </Border>
+        </DockPanel>
+
+    </Grid>
+</Window>
