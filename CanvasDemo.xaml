@@ -6,13 +6,19 @@
         xmlns:local="clr-namespace:WPFDemoThing"
         mc:Ignorable="d"
         Title="CanvasDemo" Height="450" Width="800">
-    <Grid>
-        <Canvas HorizontalAlignment="Left" Height="338" VerticalAlignment="Top" Width="643" Margin="62,38,0,0">
-            <Image Height="100" Width="100"/>
-            <RadioButton Content="RadioButton" Canvas.Left="57" Canvas.Top="105"/>
-            <RadioButton Content="RadioButton"/>
-            <Label Content="Label" Canvas.Left="46" Canvas.Top="74"/>
-        </Canvas>
+    <Canvas >
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF52B102" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Label Canvas.Top ="30" Canvas.Left ="20" >Enter here:</Label >
+        <TextBox Canvas.Top ="30" Canvas.Left ="120" Width =" 100" />
+        <Button Canvas.Top ="70" Canvas.Left ="130" Content ="Click Me!" Padding ="5" />
+        <RadioButton Content="RadioButton" Canvas.Left="54" Canvas.Top="182"/>
+        <RadioButton Content="RadioButton" Canvas.Left="105" Canvas.Top="153"/>
+        <TextBlock TextWrapping="Wrap" Text="TextBlock" Canvas.Left="301" Canvas.Top="76"/>
+    </Canvas >
 
-    </Grid>
 </Window>

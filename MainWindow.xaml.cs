@@ -19,7 +19,7 @@ namespace WPFDemoThing
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        GridPanelOne gridThing;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,6 +35,34 @@ namespace WPFDemoThing
         {
             WrapPanel wr_P = new WrapPanel();
             wr_P.Show();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string text = TextBox1.Text.ToLower();
+            if (TextBox1.Text == "canvas")
+            {
+                CanvasDemo cd = new CanvasDemo();
+                cd.Show();
+                Title = "Main Window";
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window cthulhu = new tDockPanelDemo();
+            cthulhu.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if (gridThing != null)
+            {
+                gridThing.Close();
+                gridThing = null;
+            }
+            gridThing = new GridPanelOne();
+            gridThing.Show();
         }
     }
 }

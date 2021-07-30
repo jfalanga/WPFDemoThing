@@ -17,9 +17,9 @@ namespace WPFDemoThing
     /// <summary>
     /// Interaction logic for DockPanelDemo.xaml
     /// </summary>
-    public partial class DockPanelDemo : Window
+    public partial class tDockPanelDemo : Window
     {
-        public DockPanelDemo()
+        public tDockPanelDemo()
         {
             InitializeComponent();
         }

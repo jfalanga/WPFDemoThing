@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GridPanelOne.xaml.cs">
+      <DependentUpon>GridPanelOne.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPanelDemo.xaml.cs">
       <DependentUpon>StackPanelDemo.xaml</DependentUpon>
     </Compile>
@@ -65,7 +68,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DockPanelDemo.xaml">
+    <Page Include="GridPanelOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tDockPanelDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,8 +87,8 @@
     <Compile Include="CanvasDemo.xaml.cs">
       <DependentUpon>CanvasDemo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DockPanelDemo.xaml.cs">
-      <DependentUpon>DockPanelDemo.xaml</DependentUpon>
+    <Compile Include="tDockPanelDemo.xaml.cs">
+      <DependentUpon>tDockPanelDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

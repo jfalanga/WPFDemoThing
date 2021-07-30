@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDemoThing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="251.493" Width="470.875">
+        Title="MainWindow" Height="259.057" Width="378.22">
     <Grid>
         <Button Content="Stack Panel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="84,59,0,0" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
@@ -23,6 +23,47 @@
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform Angle="-27.425"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Enter Canvas here: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,132,0,0" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="33.658"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"
+                 VerticalAlignment="Top" Width="120" Margin="102,149,0,0" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-22.427"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Dock Panel One" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="106,127,0,0" RenderTransformOrigin="0.5,0.5" Click="Button_Click_2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-14.751"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="Grid Panel&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="271,52,0,0" RenderTransformOrigin="0.5,0.5" Height="144" Click="Button_Click_3">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="14.998"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
